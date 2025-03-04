@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="rainydays, rain jacket, wind, cold, protection"
+    />
+    <!--('meta description' is telling the browser what your page is about) All html pages need to have this code, <meta name="description" content="" /> , and what the page is about in key words, inside (content="") The key words are displayed as bold in e.g. Google under the title of a web link. Try typing a food item in google and see.-->
+    <title>RainyDays: Home</title>
+    <link rel="icon" type="image/x-icon" href="images/RainyDays_Logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- my link from font awesome -->
+    <script
+      src="https://kit.fontawesome.com/f96e83bcf8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <div class="logo-div">
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="images/RainyDays_Logo.png"
+              alt="logo of the website"
+              aria-label="Link to home"
+          /></a>
+        </div>
+        <!-- noroff vid navigation -->
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger-icon"
+          ><i class="fas fa-bars fa-2x"
+            ><i class="mobile-nav-icon">hamburger-icon</i></i
+          ></label
+        >
+        <!--navigation-->
+        <nav>
+          <a href="index.html" aria-label="Link to home" class="current"
+            >Home</a
+          >
+          <a href="product.html" aria-label="Link to product"
+            >Product, will be a popup in home page</a
+          >
+          <a href="checkout.html" aria-label="Link to checkout">Checkout</a>
+        </nav>
+      </header>
+      <main class="page-main">
+        <section>
+          <h1 class="page-title">Keep dry in RainyDays jackets</h1>
+          <div class="page-text-div">
+            <p>
+              At Rainydays, you can get rain jackets designed to keep you dry,
+              comfortable, and stylish.
+            </p>
+            <p>
+              Our jackets are made as durable as they are breathable, stay
+              protected from rain without feeling weighed down.
+            </p>
+            <p>
+              With comfort and flexibility, our rain jackets are perfect for
+              urban explorers, outdoor adventurers, and everyone in between.
+            </p>
+            <p>
+              Embrace the elements with confidence, knowing Rainydays jacket has
+              you covered.
+            </p>
+          </div>
+
+          <div class="home-page-image-div">
+            <img
+              class="home-page-image"
+              src="images/home-page.jpg"
+              alt="A person in a red rain jacket by the sea"
+            />
+          </div>
+        </section>
+        <section>
+          <h1 class="page-title">Our Jackets</h1>
+          <!--Mammut container div-->
+          <div class="jacket-container-div">
+            <div class="jacket-image-div">
+              <img src="images/RainyDays_Jacket1.jpg" alt="Mammut jacket" />
+            </div>
+            <div class="text-container">
+              <h3>Mammut</h3>
+              <div class="brand-text">
+                Waterproof, breathable and durable hunting jacket. Designed for
+                hunting in changing weather, rain and snow.
+              </div>
+
+              <h4 class="money">€250</h4>
+              <a
+                class="add-to-cart-button"
+                href="shopping-cart.html"
+                aria-label="add to cart button"
+                >Add to Cart
+              </a>
+            </div>
+            <!-- Product detail link -->
+            <a
+              class="product-button"
+              class="product-link-text"
+              href="mammut-product.html"
+              >See more details</a
+            >
+          </div>
+
+          <!--Scott black container div-->
+          <div class="jacket-container-div">
+            <div class="jacket-image-div">
+              <img
+                src="images/RainyDays_Jacket4.jpg"
+                alt="Scott black jacket"
+              />
+            </div>
+            <div class="text-container">
+              <h3>Scott black</h3>
+              <div class="brand-text">
+                Stay out longer with 2-layer waterproof laminate, zoned
+                synthetic insulation. Good to training.
+              </div>
+              <h4 class="money">€200</h4>
+              <a class="add-to-cart-button" aria-label="add to cart button"
+                >Add to Cart
+              </a>
+            </div>
+            <a
+              class="product-button"
+              class="product-link-text"
+              href="mammut-product.html"
+              >See more details</a
+            >
+          </div>
+
+          <!--Beretta container div-->
+          <div class="jacket-container-div">
+            <div class="jacket-image-div">
+              <img src="images/RainyDays_Jacket3.jpg" alt="Beretta jacket" />
+            </div>
+            <div class="text-container">
+              <h3>Beretta</h3>
+              <div class="brand-text">
+                Constructed with a 2L 4-way Stretch material and filled with
+                Insulation to ensure optimal weather protection and warmth.
+              </div>
+              <h4 class="money">€220</h4>
+              <a class="add-to-cart-button" aria-label="add to cart button"
+                >Add to Cart
+              </a>
+            </div>
+            <a
+              class="product-button"
+              class="product-link-text"
+              href="mammut-product.html"
+              >See more details</a
+            >
+          </div>
+
+          <!--Scott grey container div-->
+          <div class="jacket-container-div">
+            <div class="jacket-image-div">
+              <img src="images/RainyDays_Jacket2.jpg" alt="Scott grey jacket" />
+            </div>
+            <div class="text-container">
+              <h3>Scott grey</h3>
+              <div class="brand-text">
+                Made with a silent, waterproof membrane that makes it good for
+                the cold autumn rains.
+              </div>
+              <h4 class="money">€220</h4>
+              <a class="add-to-cart-button" aria-label="add to cart button"
+                >Add to Cart
+              </a>
+            </div>
+            <a
+              class="product-button"
+              class="product-link-text"
+              href="mammut-product.html"
+              >See more details</a
+            >
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>Follow us and stay updated with the latest gear and promotions.</p>
+        <p>
+          Instagram: @RainyDayGear | Twitter: @RainyDayGear | Facebook: Rainy
+          Day Gear
+        </p>
+        <p>Copyright &copy;</p>
+      </footer>
+    </div>
+  </body>
+</html>

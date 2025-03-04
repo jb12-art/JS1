@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="checkout, jacket, rain jacket" />
+    <title>RainyDays: Checkout</title>
+    <link rel="icon" type="image/x-icon" href="images/RainyDays_Logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- my link from font awesome -->
+    <script
+      src="https://kit.fontawesome.com/f96e83bcf8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="page-header">
+        <div class="logo-div">
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="images/RainyDays_Logo.png"
+              alt="logo of the website"
+              aria-label="Link to home"
+          /></a>
+        </div>
+        <!-- noroff vid -->
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="hamburger-icon"
+          ><i class="fas fa-bars fa-2x"
+            ><i class="mobile-nav-icon">hamburger-icon</i></i
+          ></label
+        >
+        <!--navigation-->
+        <nav>
+          <a href="index.html" aria-label="Link to home">Home</a>
+          <a href="product.html" aria-label="Link to product">Product</a>
+          <a href="checkout.html" aria-label="Link to checkout" class="current"
+            >Checkout</a
+          >
+        </nav>
+      </header>
+      <main class="page-main">
+        <section>
+          <h1 class="page-title">Checkout</h1>
+          <h2 class="order-overview-text">Order overview (1 item)</h2>
+
+          <div></div>
+          <!--Mammut container div-->
+          <div class="jacket-container-div">
+            <div class="jacket-image-div">
+              <img src="images/RainyDays_Jacket1.jpg" alt="Mammut jacket" />
+            </div>
+            <div class="text-container">
+              <h3>Mammut</h3>
+              <div class="brand-text">
+                Waterproof, breathable and durable hunting jacket. Designed for
+                hunting in changing weather, rain and snow.
+              </div>
+              <h4 class="money">€250</h4>
+            </div>
+          </div>
+
+          <p class="divider"></p>
+          <p class="total-text">Total €250,-</p>
+
+          <p class="divider"></p>
+          <p class="conformation-text">
+            A confirmation will tell you when the payment is successful on a new
+            page. Invoice of your purchase will be sent to your e-mail address.
+          </p>
+
+          <div class="payment-container">
+            <!-- Noroff vid, with my own setup -->
+            <form>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                aria-required="true"
+                class="form__input"
+                required
+              />
+              <label for="email">E-mail address</label>
+              <input
+                type="text"
+                name="e-mail"
+                id="email"
+                aria-required="true"
+                class="form__input"
+                required
+              />
+              <label for="country">Country</label>
+              <input
+                type="text"
+                name="country"
+                id="country"
+                aria-required="true"
+                class="form__input"
+                required
+              />
+              <label for="city">City</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                aria-required="true"
+                class="form__input"
+                required
+              />
+              <label for="zip-code">Zip code</label>
+              <input
+                type="text"
+                name="zip-code"
+                id="zip-code"
+                aria-required="true"
+                class="form__input"
+                required
+              />
+              <label for="address">Address</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                aria-required="true"
+                class="form__input"
+                required
+              />
+              <label for="credit-card">Credit card</label>
+              <input
+                type="text"
+                name="credit-card"
+                id="credit-card"
+                aria-required="true"
+                class="form__input"
+                required
+              />
+            </form>
+            <a
+              href="conformation.html"
+              class="checkout-buy-now-button"
+              aria-label="Buy now button"
+            >
+              Buy now
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>Follow us and stay updated with the latest gear and promotions.</p>
+        <p>
+          Instagram: @RainyDayGear | Twitter: @RainyDayGear | Facebook: Rainy
+          Day Gear
+        </p>
+        <p>Copyright &copy;</p>
+      </footer>
+    </div>
+  </body>
+</html>

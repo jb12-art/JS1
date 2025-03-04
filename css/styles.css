@@ -1,0 +1,226 @@
+/* All styles that can be shared is put here */
+
+/* Files that are only needed to be imported are called partials */
+/* These are marked with an underscore: */
+@import url("./index.css");
+@import url("./product.css");
+@import url("./checkout.css");
+@import url("./conformation.css");
+/* Feel free to add as many of these imports as you need */
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: rgb(223, 230, 238);
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/*div for: header, main, footer. noroff vid*/
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.logo-div {
+  margin: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 28px;
+  height: auto;
+  max-width: 334px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  position: relative;
+  background: lightgrey;
+}
+
+.page-main {
+  flex-grow: 1;
+}
+
+.page-title {
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.page-text-div {
+  margin: auto;
+  max-width: 840px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+/* nav & mobile screen */
+@media (max-width: 820px) {
+  nav,
+  #menu-checkbox {
+    display: none;
+  }
+
+  #menu-checkbox:checked ~ nav {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    background: lightgrey;
+    left: 0px;
+    margin: auto;
+  }
+
+  .mobile-nav-icon {
+    display: none;
+  }
+
+  nav a {
+    display: block;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .current {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .anchor-jackets-link {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 180px;
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background: #8bcace;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+  }
+
+  .home-page-image-div {
+    margin: auto;
+    max-width: 900px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-page-image {
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*nav & desktop screen*/
+@media (min-width: 821px) {
+  nav,
+  #menu-checkbox {
+    display: none;
+  }
+
+  nav a {
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  nav {
+    padding-top: 15px;
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .current {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .anchor-jackets-link {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 180px;
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    background: #8bcace;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+  }
+
+  .anchor-jackets-link:hover {
+    border-style: solid;
+    border-color: #000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .home-page-image-div {
+    margin: auto;
+    max-width: 900px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-page-image {
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+}
+
+footer {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  background-color: lightgrey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
