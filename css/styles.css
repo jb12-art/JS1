@@ -6,6 +6,7 @@
 @import url("./product.css");
 @import url("./checkout.css");
 @import url("./conformation.css");
+@import url("./jacket-detail-product.css");
 /* Feel free to add as many of these imports as you need */
 
 body {
@@ -56,13 +57,24 @@ header {
   padding-bottom: 30px;
 }
 
+.filter-products {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  border-width: 1px 0px 1px 0px;
+  max-width: 800px;
+  margin-bottom: 20px;
+  background-color: rgb(130, 200, 202);
+}
+
 .page-text-div {
   margin: auto;
   max-width: 840px;
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: start;
   flex-direction: column;
+  line-height: 1.4;
 }
 
 /* nav & mobile screen */
@@ -98,29 +110,6 @@ header {
   .current {
     font-weight: bold;
     text-decoration: underline;
-  }
-
-  .anchor-jackets-link {
-    margin: auto;
-    margin-top: 20px;
-    max-width: 180px;
-    height: 40px;
-    width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 10px;
-    font-weight: bold;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    background: #8bcace;
-    cursor: pointer;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
-    text-decoration: none;
   }
 
   .home-page-image-div {
@@ -170,35 +159,6 @@ header {
   .current {
     font-weight: bold;
     text-decoration: underline;
-  }
-
-  .anchor-jackets-link {
-    margin: auto;
-    margin-top: 20px;
-    max-width: 180px;
-    height: 40px;
-    width: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: grey;
-    background: #8bcace;
-    cursor: pointer;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
-    text-decoration: none;
-  }
-
-  .anchor-jackets-link:hover {
-    border-style: solid;
-    border-color: #000;
-    font-weight: bold;
-    text-decoration: none;
   }
 
   .home-page-image-div {

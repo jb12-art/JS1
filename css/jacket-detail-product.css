@@ -1,12 +1,10 @@
-/* This is where all the products are.
-Every product has their own product detail page, that is connected to the 'picture' and 'See more details'-link. Click the link and a new page opens. */
+/* Jacket-detail-product page, it will look different then original at home page */
 
 /* Mobile screen */
 @media (max-width: 820px) {
-  .jacket-container-div {
+  .detail-container-div {
     margin: 0 auto;
     max-width: 400px;
-    height: auto;
     margin-bottom: 60px;
     border-style: solid;
     border-width: 1px;
@@ -36,11 +34,10 @@ Every product has their own product detail page, that is connected to the 'pictu
     margin-top: 20px;
   }
 
-  .brand-text {
+  .detail-brand-text {
     margin: auto;
     text-align: center;
     width: 100%;
-    margin-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -70,8 +67,8 @@ Every product has their own product detail page, that is connected to the 'pictu
   }
 
   .product-button {
-    margin: auto;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 10px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -85,15 +82,21 @@ Every product has their own product detail page, that is connected to the 'pictu
     font-size: 20px;
     color: black;
   }
+
+  .product-options {
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    margin-bottom: 30px;
+  }
 }
 
 /* desktop screen */
 @media (min-width: 821px) {
-  .jacket-container-div {
+  .detail-container-div {
     margin: 0 auto;
-    max-width: 650px;
+    max-width: 850px;
     width: 100%;
-    height: 340px;
+    height: 600px;
     margin-bottom: 60px;
     border-style: solid;
     border-width: 1px;
@@ -101,10 +104,10 @@ Every product has their own product detail page, that is connected to the 'pictu
     display: flex;
   }
 
-  .jacket-image-div {
+  .image-div {
     margin: auto;
-    width: 280px;
-    height: 340px;
+    width: 400px;
+    height: auto;
     margin-top: 5px;
     margin-left: 1px;
     padding-right: 1px;
@@ -126,11 +129,11 @@ Every product has their own product detail page, that is connected to the 'pictu
     align-items: start;
   }
 
-  .brand-text {
+  .detail-brand-text {
     max-width: 300px;
     width: 100%;
     margin-top: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
 
   .money {
@@ -163,19 +166,10 @@ Every product has their own product detail page, that is connected to the 'pictu
     text-decoration: none;
   }
 
-  .product-button {
-    margin: 0 auto;
-    padding: 0;
-    padding-top: 150px;
-    text-align: center;
+  .product-options {
     border-style: solid;
-    border-width: 0px 0px 0px 1px;
-    color: black;
-    background-color: rgb(209, 161, 103);
-  }
-
-  .product-link-text {
-    font-size: 20px;
-    color: black;
+    border-width: 1px;
+    padding-left: 5px;
+    margin-bottom: 30px;
   }
 }
