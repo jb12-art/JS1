@@ -3,55 +3,93 @@ Every product has their own product detail page, that is connected to the 'pictu
 
 /* Mobile screen */
 @media (max-width: 820px) {
-  .jacket-container-div {
+  .container {
+    max-width: 1200px;
     margin: 0 auto;
-    max-width: 400px;
-    height: auto;
-    margin-bottom: 60px;
-    border-style: solid;
-    border-width: 1px;
-    background: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
   }
 
-  .jacket-image-div {
+  /* change the names to have '.jacket-' then the other name.
+    
+  } */
+
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* .jacket-image-div {
     margin: auto;
     margin-top: 1px;
     max-width: 400px;
     height: auto;
     width: 100%;
     background-size: cover;
+  } */
+
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
   }
 
-  img {
+  /* img {
     margin: auto;
     max-width: 400px;
     width: 80%;
     height: auto;
     display: flex;
+  } */
+
+  .card-content {
+    padding: 15px;
   }
 
-  .text-container {
+  /* .text-container {
     margin: auto;
     text-align: center;
     margin-top: 20px;
+  } */
+
+  .card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
   }
 
-  .brand-text {
+  /* .brand-text {
     margin: auto;
     text-align: center;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+  } */
+
+  .card-price {
+    font-size: 1.1rem;
+    color: #2ecc71;
+    font-weight: bold;
   }
 
-  .money {
+  /* .money {
     margin-left: 20px;
     display: inline-block;
     margin-right: 20px;
     padding-bottom: 10px;
-  }
+  } */
 
-  .add-to-cart-button {
+  /* .add-to-cart-button {
     margin: auto;
     background-color: lightgrey;
     border-style: solid;
@@ -84,12 +122,21 @@ Every product has their own product detail page, that is connected to the 'pictu
   .product-link-text {
     font-size: 20px;
     color: black;
-  }
+  } */
 }
 
 /* desktop screen */
 @media (min-width: 821px) {
-  .jacket-container-div {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  /* /* .jacket-container-div {
     margin: 0 auto;
     max-width: 650px;
     width: 100%;
@@ -99,9 +146,21 @@ Every product has their own product detail page, that is connected to the 'pictu
     border-width: 1px;
     background: white;
     display: flex;
+  } */
+
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
   }
 
-  .jacket-image-div {
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* .jacket-image-div {
     margin: auto;
     width: 280px;
     height: 340px;
@@ -109,14 +168,24 @@ Every product has their own product detail page, that is connected to the 'pictu
     margin-left: 1px;
     padding-right: 1px;
     display: block;
+  } */
+
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
   }
 
-  img {
+  /* img {
     width: 100%;
     height: 90%;
+  } */
+
+  .card-content {
+    padding: 15px;
   }
 
-  .text-container {
+  /* .text-container {
     margin: auto;
     max-width: 300px;
     width: 100%;
@@ -124,22 +193,35 @@ Every product has their own product detail page, that is connected to the 'pictu
     margin-left: 10px;
     margin-top: 20px;
     align-items: start;
+  } */
+
+  .card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
   }
 
-  .brand-text {
+  /* .brand-text {
     max-width: 300px;
     width: 100%;
     margin-top: 40px;
     margin-bottom: 80px;
+  } */
+
+  .card-price {
+    font-size: 1.1rem;
+    color: #2ecc71;
+    font-weight: bold;
   }
 
-  .money {
+  /* .money {
     margin: auto;
     display: inline-block;
     margin-right: 20px;
-  }
+  } */
 
-  .add-to-cart-button {
+  /* .add-to-cart-button {
     margin: auto;
     background-color: lightgrey;
     border-style: solid;
@@ -157,13 +239,13 @@ Every product has their own product detail page, that is connected to the 'pictu
     text-align: center;
     display: inline-block;
     color: black;
-  }
+  } */
 
-  .add-to-cart-button:hover {
+  /* .add-to-cart-button:hover {
     text-decoration: none;
-  }
+  } */
 
-  .product-button {
+  /* .product-button {
     margin: 0 auto;
     padding: 0;
     padding-top: 150px;
@@ -172,10 +254,10 @@ Every product has their own product detail page, that is connected to the 'pictu
     border-width: 0px 0px 0px 1px;
     color: black;
     background-color: rgb(209, 161, 103);
-  }
+  } */
 
-  .product-link-text {
+  /* .product-link-text {
     font-size: 20px;
     color: black;
-  }
+  }  */
 }

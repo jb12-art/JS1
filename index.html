@@ -14,7 +14,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/script.js"></script>    
+
     <!-- my link from font awesome -->
     <script
       src="https://kit.fontawesome.com/f96e83bcf8.js"
@@ -61,127 +63,24 @@
               outdoor adventurers, and everyone in between.
             </p>
           </div>
-
-          <div class="home-page-image-div">
-            <img
-              class="home-page-image"
-              src="images/home-page.jpg"
-              alt="A person in a red rain jacket by the sea"
-            />
+          
           </div>
+          
         </section>
         <section>
           <h1 class="page-title">Our Jackets</h1>
-          <!-- class="filter-products", is in styles.css -->
-          <div class="filter-products">
-            <p>Filter products:</p>
-            <p>Category: cooler, warmer</p>
-            <!-- 3 products are waterproof -->
-            <p>Genre: waterproof</p>
-          </div>
-
-          <!--Mammut container div-->
-          <div class="jacket-container-div">
-            <div class="jacket-image-div">
-              <img src="images/RainyDays_Jacket1.jpg" alt="Mammut jacket" />
-            </div>
-            <div class="text-container">
-              <h3>Mammut</h3>
-              <div class="brand-text">
-                Waterproof, breathable and durable hunting jacket. Designed for
-                hunting in changing weather, rain and snow.
-              </div>
-
-              <h4 class="money">€250</h4>
-              <a
-                class="add-to-cart-button"
-                href="checkout.html"
-                aria-label="add to cart button"
-                >Add to Cart
-              </a>
-            </div>
-            <!-- Product detail link -->
-            <a
-              class="product-button product-link-text"
-              href="mammut-product.html"
-              >See more details</a
-            >
-          </div>
-
-          <!--Scott black container div-->
-          <div class="jacket-container-div">
-            <div class="jacket-image-div">
-              <img
-                src="images/RainyDays_Jacket4.jpg"
-                alt="Scott black jacket"
-              />
-            </div>
-            <div class="text-container">
-              <h3>Scott black</h3>
-              <div class="brand-text">
-                Stay out longer with a 2-layer laminate that provides superior
-                protection against wind.
-              </div>
-              <h4 class="money">€160</h4>
-              <a class="add-to-cart-button" aria-label="add to cart button"
-                >Add to Cart
-              </a>
-            </div>
-            <!-- Product detail link -->
-            <a
-              class="product-button product-link-text"
-              href="scott-black-product.html"
-              >See more details</a
-            >
-          </div>
-
-          <!--Beretta container div-->
-          <div class="jacket-container-div">
-            <div class="jacket-image-div">
-              <img src="images/RainyDays_Jacket3.jpg" alt="Beretta jacket" />
-            </div>
-            <div class="text-container">
-              <h3>Beretta</h3>
-              <div class="brand-text">
-                Constructed with a 2-layer 4-way stretch material, this jacket
-                offers exceptional flexibility and freedom of movement.
-              </div>
-              <h4 class="money">€180</h4>
-              <a class="add-to-cart-button" aria-label="add to cart button"
-                >Add to Cart
-              </a>
-            </div>
-            <!-- Product detail link -->
-            <a
-              class="product-button product-link-text"
-              href="beretta-product.html"
-              >See more details</a
-            >
-          </div>
-
-          <!--Scott grey container div-->
-          <div class="jacket-container-div">
-            <div class="jacket-image-div">
-              <img src="images/RainyDays_Jacket2.jpg" alt="Scott grey jacket" />
-            </div>
-            <div class="text-container">
-              <h3>Scott grey</h3>
-              <div class="brand-text">
-                Made with a silent, waterproof membrane that makes it good for
-                the cold autumn rains.
-              </div>
-              <h4 class="money">€220</h4>
-              <a class="add-to-cart-button" aria-label="add to cart button"
-                >Add to Cart
-              </a>
-            </div>
-            <!-- Product detail link -->
-            <a
-              class="product-button product-link-text"
-              href="scott-grey-product.html"
-              >See more details</a
-            >
-          </div>
+          <!-- class="", is in styles.css -->
+           <!-- second code -->
+          
+          <select class="gender-filter" id="genderFilter">
+            <option value="">All Genders</option>
+            <option value="Men">Male</option>
+            <option value="Women">Female</option>
+          </select>
+                    
+          <!-- first code -->
+          <div id="container" class="container"></div>    
+          
         </section>
       </main>
       <footer>
