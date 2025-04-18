@@ -56,6 +56,8 @@
           <h1 class="page-title">Checkout</h1>
           <h2 class="order-overview-text">Order overview item(s)</h2>
 
+          <div id="cart-items" class="cart-items"></div>
+
           <p class="divider"></p>
           <p class="total-text">Total €,-</p>
 
@@ -151,5 +153,38 @@
         <p>Copyright &copy;</p>
       </footer>
     </div>
+    <!-- new code, add product to checkout -->
+    <script>
+      const cartItemsContainer = document.getElementById("cart-items");
+
+      function displayCartItems() {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        let total = 0;
+
+        if (cart.length === 0) {
+          cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+          return;
+        }
+
+        cartItemsContainer.innerHTML = "";
+
+        cart.forEach((item) => {
+          const itemDiv = document.createElement("div");
+          itemDiv.className = "cart-item";
+
+          itemDiv.innerHTML = `
+    <h3>${item.title}</h3>
+    <p>Price: £${item.price}</p>
+    `;
+
+          total += item.price;
+          cartItemsContainer.appendChild(itemDiv);
+        });
+
+        document.querySelector(".total-text").textContent = `Total £${total}`;
+      }
+
+      displayCartItems();
+    </script>
   </body>
 </html>

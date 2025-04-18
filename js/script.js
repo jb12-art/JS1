@@ -27,28 +27,54 @@ function displayProducts(products) {
     const content = document.createElement("div");
     const title = document.createElement("h2");
     const price = document.createElement("p");
-    const anchor = document.createElement("a");
+    // const anchor = document.createElement("a");
+    const addToCartBtn = document.createElement("button"); // new code, add product to checkout
 
     card.className = "card";
     image.className = "card-image";
     content.className = "card-content";
     title.className = "card-title";
     price.className = "card-price";
+    addToCartBtn.className = "add-to-cart-button"; // new code, add product to checkout
 
     image.src = product.image.url;
     image.alt = product.image.alt;
-    title.textContent = product.title;
+
+    // Make title link to product page
+    const titleLink = document.createElement("a");
+    titleLink.href = `product/index.html?id=${product.id}`;
+    titleLink.textContent = product.title;
+    title.appendChild(titleLink);
+
+    // title.textContent = product.title; // crossing this out for now.
     price.textContent = `$${product.price}`;
-    anchor.href = `product/index.html?id=${product.id}`;
+    // anchor.href = `product/index.html?id=${product.id}`; // crossing this out for now.
+    addToCartBtn.textContent = "Add to Cart"; // new code, add product to checkout
+
+    // new code, add product to checkout
+    // Add to cart handler
+    addToCartBtn.addEventListener("click", () => {
+      addToCart(product);
+    });
 
     content.appendChild(title);
     content.appendChild(price);
+    content.appendChild(addToCartBtn); // new code, add product to checkout
     card.appendChild(image);
     card.appendChild(content);
-    anchor.appendChild(card);
+    // anchor.appendChild(card); // old code, add product to checkout
 
-    container.appendChild(anchor);
+    container.appendChild(card);
+    // container.appendChild(anchor); // old code, add product to checkout
   });
+}
+
+// new code, Alerting you when you add product to checkout, Might remove this later and add a number beside the 'add to cart' button.
+function addToCart(product) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push(product);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(`${product.title} added to cart`);
 }
 
 function filterProducts() {
