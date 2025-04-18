@@ -2,11 +2,9 @@
 
 /* Files that are only needed to be imported are called partials */
 /* These are marked with an underscore: */
-@import url("./index.css");
 @import url("./product.css");
 @import url("./checkout.css");
-@import url("./conformation.css");
-@import url("./jacket-detail-product.css");
+@import url("./confirmation.css");
 /* Feel free to add as many of these imports as you need */
 
 body {
@@ -47,7 +45,7 @@ header {
 }
 
 .page-main {
-  /* flex-grow: 1; */
+  flex-grow: 1;
 }
 
 .page-title {
@@ -55,6 +53,7 @@ header {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 30px;
+  font-size: 1.6rem;
 }
 
 .gender-filter {
@@ -70,6 +69,7 @@ header {
   text-align: start;
   flex-direction: column;
   line-height: 1.4;
+  padding-bottom: 30px;
 }
 
 /* nav & mobile screen */
