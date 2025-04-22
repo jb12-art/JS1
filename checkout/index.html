@@ -14,9 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
     />
     <link rel="stylesheet" href="../css/styles.css" />
-    <!-- <script defer src="../js/script.js"></script> -->
-    <!-- <script defer src="./product.js"></script> -->
-    <!--  -->
+    <script defer src="../checkout/checkout.js"></script>
+
     <!-- my link from font awesome -->
     <script
       src="https://kit.fontawesome.com/f96e83bcf8.js"
@@ -54,17 +53,19 @@
       <main class="page-main">
         <section>
           <h1 class="page-title">Checkout</h1>
-          <h2 class="order-overview-text">Order overview item(s)</h2>
+          <h2 class="order-overview-text">Order overview</h2>
 
-          <div id="cart-items" class="cart-items"></div>
+          <div id="cart-items" class="container"></div>
+          <div id="cart-items" class="cart-items-container"></div>
+          <!--don't know if "cart-items container" is missing - or not. -->
 
           <p class="divider"></p>
-          <p class="total-text">Total €,-</p>
+          <p class="total-text">Total $,-</p>
 
           <p class="divider"></p>
           <p class="confirmation-text">
             A confirmation will tell you when the payment is successful on a new
-            page. Invoice of your purchase will be sent to your e-mail address.
+            page.
           </p>
 
           <div class="payment-container">
@@ -153,38 +154,5 @@
         <p>Copyright &copy;</p>
       </footer>
     </div>
-    <!-- new code, add product to checkout -->
-    <script>
-      const cartItemsContainer = document.getElementById("cart-items");
-
-      function displayCartItems() {
-        const cart = JSON.parse(localStorage.getItem("cart")) || [];
-        let total = 0;
-
-        if (cart.length === 0) {
-          cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
-          return;
-        }
-
-        cartItemsContainer.innerHTML = "";
-
-        cart.forEach((item) => {
-          const itemDiv = document.createElement("div");
-          itemDiv.className = "cart-item";
-
-          itemDiv.innerHTML = `
-    <h3>${item.title}</h3>
-    <p>Price: £${item.price}</p>
-    `;
-
-          total += item.price;
-          cartItemsContainer.appendChild(itemDiv);
-        });
-
-        document.querySelector(".total-text").textContent = `Total £${total}`;
-      }
-
-      displayCartItems();
-    </script>
   </body>
 </html>

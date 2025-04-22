@@ -23,6 +23,17 @@
   }
 }
 
+/* Apply the same layout as product cards */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
 .order-overview-text {
   margin: auto;
   text-align: center;

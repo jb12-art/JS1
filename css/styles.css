@@ -56,11 +56,6 @@ header {
   font-size: 1.6rem;
 }
 
-.gender-filter {
-  margin: auto;
-  display: flex;
-}
-
 .page-text-div {
   margin: auto;
   max-width: 840px;
@@ -71,6 +66,13 @@ header {
   line-height: 1.4;
   padding-bottom: 30px;
 }
+
+.gender-filter {
+  margin: auto;
+  display: flex;
+}
+
+/* how to style the cart-items, that image, title, price and button is in the same div */
 
 /* nav & mobile screen */
 @media (max-width: 820px) {

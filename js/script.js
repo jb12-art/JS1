@@ -27,15 +27,14 @@ function displayProducts(products) {
     const content = document.createElement("div");
     const title = document.createElement("h2");
     const price = document.createElement("p");
-    // const anchor = document.createElement("a");
-    const addToCartBtn = document.createElement("button"); // new code, add product to checkout
+    const addToCartBtn = document.createElement("button"); // add product to checkout
 
     card.className = "card";
     image.className = "card-image";
     content.className = "card-content";
     title.className = "card-title";
     price.className = "card-price";
-    addToCartBtn.className = "add-to-cart-button"; // new code, add product to checkout
+    addToCartBtn.className = "add-to-cart-button"; // add product to checkout
 
     image.src = product.image.url;
     image.alt = product.image.alt;
@@ -46,7 +45,6 @@ function displayProducts(products) {
     titleLink.textContent = product.title;
     title.appendChild(titleLink);
 
-    // title.textContent = product.title; // crossing this out for now.
     price.textContent = `$${product.price}`;
     // anchor.href = `product/index.html?id=${product.id}`; // crossing this out for now.
     addToCartBtn.textContent = "Add to Cart"; // new code, add product to checkout
