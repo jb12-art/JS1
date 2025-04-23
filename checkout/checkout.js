@@ -33,7 +33,7 @@ function displayCartItems() {
       (item) => item.id === productToRemove.id
     );
     if (indexToRemove > -1) {
-      cart.splice(indexToRemove, 1); //remove it.
+      cart.splice(indexToRemove, 1); //remove item.
     }
 
     localStorage.setItem("cart", JSON.stringify(cart));

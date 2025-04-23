@@ -3,11 +3,13 @@
 const API_URL = "https://v2.api.noroff.dev/rainy-days";
 const container = document.querySelector("#container");
 const genderFilter = document.querySelector("#genderFilter");
+const loadingIndicator = document.querySelector("#loadingIndicator");
 
 let allProducts = []; // Store all products globally
 
 async function fetchAndCreateProducts() {
   try {
+    loadingIndicator.classList.remove("hidden"); // show Loading products..., when API products is loading.
     const response = await fetch(API_URL);
     const data = await response.json();
     allProducts = data.data; // Store fetched products
@@ -15,6 +17,10 @@ async function fetchAndCreateProducts() {
     displayProducts(allProducts); // Display all products initially
   } catch (err) {
     console.error("Error fetching products:", err);
+    container.innerHTML =
+      "<p class='error-message'>Ops! Failed to load products. Please refresh the page or try again later.</p>";
+  } finally {
+    loadingIndicator.classList.add("hidden"); // Hide loading
   }
 }
 
@@ -46,10 +52,9 @@ function displayProducts(products) {
     title.appendChild(titleLink);
 
     price.textContent = `$${product.price}`;
-    // anchor.href = `product/index.html?id=${product.id}`; // crossing this out for now.
-    addToCartBtn.textContent = "Add to Cart"; // new code, add product to checkout
+    addToCartBtn.textContent = "Add to Cart"; // add product to checkout
 
-    // new code, add product to checkout
+    // add product to checkout
     // Add to cart handler
     addToCartBtn.addEventListener("click", () => {
       addToCart(product);
@@ -57,13 +62,11 @@ function displayProducts(products) {
 
     content.appendChild(title);
     content.appendChild(price);
-    content.appendChild(addToCartBtn); // new code, add product to checkout
+    content.appendChild(addToCartBtn); // add product to checkout
     card.appendChild(image);
     card.appendChild(content);
-    // anchor.appendChild(card); // old code, add product to checkout
 
     container.appendChild(card);
-    // container.appendChild(anchor); // old code, add product to checkout
   });
 }
 
