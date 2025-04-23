@@ -19,7 +19,8 @@ function displayCartItems() {
 
   // Handle empty cart.
   if (cart.length === 0) {
-    cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+    cartItemsContainer.innerHTML =
+      '<p class="empty-cart-message">Your cart is empty.</p>';
     document.querySelector(".total-text").textContent = "Total $0";
     return;
   }
