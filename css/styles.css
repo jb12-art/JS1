@@ -3,6 +3,7 @@
 /* Files that are only needed to be imported are called partials */
 /* These are marked with an underscore: */
 @import url("./product.css");
+@import url("./product-details.css");
 @import url("./checkout.css");
 @import url("./confirmation.css");
 /* Feel free to add as many of these imports as you need */
@@ -72,8 +73,6 @@ header {
   display: flex;
 }
 
-/* how to style the cart-items, that image, title, price and button is in the same div */
-
 /* nav & mobile screen */
 @media (max-width: 820px) {
   nav,
@@ -107,20 +106,6 @@ header {
   .current {
     font-weight: bold;
     text-decoration: underline;
-  }
-
-  .home-page-image-div {
-    margin: auto;
-    max-width: 900px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .home-page-image {
-    margin: auto;
-    width: 100%;
-    height: auto;
   }
 }
 
@@ -156,20 +141,6 @@ header {
   .current {
     font-weight: bold;
     text-decoration: underline;
-  }
-
-  .home-page-image-div {
-    margin: auto;
-    max-width: 900px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .home-page-image {
-    margin: auto;
-    width: 100%;
-    height: auto;
   }
 }
 

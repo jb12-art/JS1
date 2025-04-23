@@ -1,0 +1,65 @@
+/* To center everything on the product details page */
+/* This file connects with JS, product.js and through styles.css */
+
+/* Center the whole container */
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: rgb(223, 230, 238);
+}
+
+/* Style for the product box */
+.product-details {
+  text-align: center;
+  max-width: 500px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+/* Product image */
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Product title */
+.product-title {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+/* Price styling */
+.product-price {
+  font-size: 1.5rem;
+  color: #28a745;
+  margin: 10px 0;
+}
+
+/* Description */
+.product-description {
+  font-size: 1rem;
+  margin: 15px 0 25px;
+  color: #555;
+}
+
+/* Back to products link */
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
