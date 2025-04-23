@@ -12,14 +12,14 @@ Every product has their own product detail page, that is connected to the 'pictu
     margin-top: 2rem;
   }
 
-  /* In Home page, index.html. Loading text is shown when waiting for products to load. */
+  /* In Home page, product details index.html. Loading text is shown when waiting for products to load. */
   .loading {
     text-align: center;
     font-size: 1.2rem;
     margin: 20px;
   }
 
-  /* In Home page, index.html. Loading text is shown when waiting for products to load. */
+  /* In Home page, product details index.html. Loading text is shown when waiting for products to load. */
   .hidden {
     display: none;
   }
@@ -81,14 +81,14 @@ Every product has their own product detail page, that is connected to the 'pictu
     margin-top: 2rem;
   }
 
-  /* In Home page, index.html. Loading text is shown when waiting for products to load. */
+  /* In Home, product details page, index.html. Loading text is shown when waiting for products to load. */
   .loading {
     text-align: center;
     font-size: 1.2rem;
     margin: 20px;
   }
 
-  /* In Home page, index.html. Loading text is shown when waiting for products to load. */
+  /* In Home, product details page, index.html. Loading text is shown when waiting for products to load. */
   .hidden {
     display: none;
   }

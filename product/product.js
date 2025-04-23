@@ -1,8 +1,11 @@
 const API_URL = "https://v2.api.noroff.dev/rainy-days";
 const container = document.querySelector("#container");
+const loadingIndicator = document.querySelector("#loadingIndicator"); // loading message
 
 async function fetchAndCreateProducts() {
   try {
+    loadingIndicator.classList.remove("hidden"); // show loading
+
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
 
@@ -48,6 +51,8 @@ async function fetchAndCreateProducts() {
     console.error("Failed to fetch product", error);
     container.textContent =
       "Ops! Failed to load product, Please refresh the page or try again later.";
+  } finally {
+    loadingIndicator.classList.add("hidden"); // hide loading
   }
 }
 

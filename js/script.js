@@ -3,7 +3,7 @@
 const API_URL = "https://v2.api.noroff.dev/rainy-days";
 const container = document.querySelector("#container");
 const genderFilter = document.querySelector("#genderFilter");
-const loadingIndicator = document.querySelector("#loadingIndicator");
+const loadingIndicator = document.querySelector("#loadingIndicator"); // loading message
 
 let allProducts = []; // Store all products globally
 

@@ -2,42 +2,35 @@
 // <!-- js code, add and remove product to and from checkout -->
 
 const cartItemsContainer = document.getElementById("cart-items");
+const loadingIndicator = document.getElementById("loadingIndicator");
 
 function displayCartItems() {
+  // Show loading message
+  loadingIndicator.classList.remove("hidden");
+  cartItemsContainer.innerHTML = ""; // Clear container early
+
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   let total = 0;
 
-  cartItemsContainer.innerHTML = "";
-
-  // Calculate total even if cart is empty.
-  // cart.forEach((item) => {
-  //   total += item.price;
-  // });
-
-  // always update total, even if cart is empty.
-  // document.querySelector(".total-text").textContent = `Total $${total}`;
-
-  // Handle empty cart.
+  // Handle empty cart
   if (cart.length === 0) {
     cartItemsContainer.innerHTML =
       '<p class="empty-cart-message">Your cart is empty.</p>';
     document.querySelector(".total-text").textContent = "Total $0";
+    loadingIndicator.classList.add("hidden");
     return;
   }
 
   function removeFromCart(productToRemove) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    // remove the first item that matches the product ID.
     const indexToRemove = cart.findIndex(
       (item) => item.id === productToRemove.id
     );
     if (indexToRemove > -1) {
-      cart.splice(indexToRemove, 1); //remove item.
+      cart.splice(indexToRemove, 1);
     }
-
     localStorage.setItem("cart", JSON.stringify(cart));
-    displayCartItems(); // re-render.
+    displayCartItems(); // Re-render after removal
   }
 
   cart.forEach((item) => {
@@ -76,6 +69,9 @@ function displayCartItems() {
   });
 
   document.querySelector(".total-text").textContent = `Total $${total}`;
+
+  // Hide loading message after rendering is done
+  loadingIndicator.classList.add("hidden");
 }
 
 displayCartItems();
