@@ -7,7 +7,7 @@
       name="description"
       content="rainydays, rain jacket, wind, cold, protection"
     />
-  
+
     <title>RainyDays: Home</title>
     <link rel="icon" type="image/x-icon" href="images/RainyDays_Logo.png" />
     <link
@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script defer src="js/script.js"></script>    
+    <script defer src="js/script.js"></script>
 
     <!-- my link from font awesome -->
     <script
@@ -48,8 +48,9 @@
             >Home</a
           >
 
-          <a href="checkout/index.html" aria-label="Link to checkout">Checkout</a>
-    
+          <a href="checkout/index.html" aria-label="Link to checkout"
+            >Checkout</a
+          >
         </nav>
       </header>
       <main class="page-main">
@@ -64,24 +65,22 @@
               outdoor adventurers, and everyone in between.
             </p>
           </div>
-          
-          </div>
-          
         </section>
         <section>
           <!-- (2 classes 1.loading 2.hidden) class="loading hidden", is in product.css -->
-          <div class="loading hidden" id="loadingIndicator">Loading products...</div>
-          
-          <!-- class="gender-filter", is in styles.css -->                  
+          <div class="loading hidden" id="loadingIndicator">
+            Loading products...
+          </div>
+
+          <!-- class="gender-filter", is in styles.css -->
           <select class="gender-filter" id="genderFilter">
             <option value="">All Genders</option>
             <option value="Men">Male</option>
             <option value="Women">Female</option>
           </select>
-                    
+
           <!-- class="container", is in product.css -->
-          <div id="container" class="container"></div>    
-          
+          <div id="container" class="container"></div>
         </section>
       </main>
       <footer>
