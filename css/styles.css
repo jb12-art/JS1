@@ -95,9 +95,9 @@ header {
 
   .basket-dropdown {
     position: absolute;
-    left: 5em; /* this moves the dropdown to the left side */
+    left: 0em; /* this moves the dropdown to the left side */
     background-color: white;
-    min-width: 360px;
+    min-width: 330px;
     border: 1px solid #000000;
     z-index: 1000;
     padding: 15px;
