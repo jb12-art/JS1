@@ -70,12 +70,57 @@ function displayProducts(products) {
   });
 }
 
-// new code, Alerting you when you add product to checkout, Might remove this later and add a number beside the 'add to cart' button.
+// Alerting you when you add product to checkout
 function addToCart(product) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   cart.push(product);
   localStorage.setItem("cart", JSON.stringify(cart));
+  updateBasketDisplay(); // Refresh basket dropdown
   alert(`${product.title} added to cart`);
+}
+
+// basket
+const basketToggle = document.getElementById("basketToggle");
+const basketDropdown = document.getElementById("basketDropdown");
+const basketList = document.getElementById("basketList");
+
+// Toggle basket visibility
+basketToggle.addEventListener("click", () => {
+  basketDropdown.classList.toggle("hidden");
+  updateBasketDisplay();
+});
+
+// Update basket UI
+function updateBasketDisplay() {
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  basketList.innerHTML = "";
+
+  if (cart.length === 0) {
+    basketList.innerHTML = "<li>Your basket is empty.</li>";
+    return;
+  }
+
+  cart.forEach((item, index) => {
+    const li = document.createElement("li");
+    li.classList.add("basket-item");
+    li.innerHTML = `${item.title} - $${item.price} <button class="remove-button" data-index="${index}">Remove</button>`;
+    basketList.appendChild(li);
+  });
+
+  // Attach event listeners to remove buttons
+  document.querySelectorAll(".remove-button").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const indexToRemove = parseInt(e.target.getAttribute("date-index"));
+      removeFromCart(indexToRemove);
+    });
+  });
+}
+
+function removeFromCart(index) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.splice(index, 1); // Remove the item at the given index
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateBasketDisplay(); // Refresh UI
 }
 
 function filterProducts() {

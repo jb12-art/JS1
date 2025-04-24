@@ -1,5 +1,5 @@
 /* This is where all the products are.
-Every product has their own product detail page, that is connected to the 'picture' and 'See more details'-link. Click the link and a new page opens. */
+Every product has their own product detail page. Click the link and a new page opens. */
 
 /* Mobile screen */
 @media (max-width: 820px) {
@@ -12,14 +12,14 @@ Every product has their own product detail page, that is connected to the 'pictu
     margin-top: 2rem;
   }
 
-  /* In Home page, product details index.html. Loading text is shown when waiting for products to load. */
+  /* In Home page & product details index.html. Loading text is shown when waiting for products to load. */
   .loading {
     text-align: center;
     font-size: 1.2rem;
     margin: 20px;
   }
 
-  /* In Home page, product details index.html. Loading text is shown when waiting for products to load. */
+  /* In Home page & product details index.html. Loading text is shown when waiting for products to load. */
   .hidden {
     display: none;
   }
@@ -37,13 +37,12 @@ Every product has their own product detail page, that is connected to the 'pictu
   .card {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease;
   }
 
   .card:hover {
-    transform: translateY(-5px);
+    border-width: 1px;
+    border-style: solid;
   }
 
   .card-image {
@@ -81,14 +80,14 @@ Every product has their own product detail page, that is connected to the 'pictu
     margin-top: 2rem;
   }
 
-  /* In Home, product details page, index.html. Loading text is shown when waiting for products to load. */
+  /* In Home & product details page, index.html. Loading text is shown when waiting for products to load. */
   .loading {
     text-align: center;
     font-size: 1.2rem;
     margin: 20px;
   }
 
-  /* In Home, product details page, index.html. Loading text is shown when waiting for products to load. */
+  /* In Home & product details page, index.html. Loading text is shown when waiting for products to load. */
   .hidden {
     display: none;
   }
@@ -106,13 +105,12 @@ Every product has their own product detail page, that is connected to the 'pictu
   .card {
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease;
   }
 
   .card:hover {
-    transform: translateY(-5px);
+    border-width: 1px;
+    border-style: solid;
   }
 
   .card-image {

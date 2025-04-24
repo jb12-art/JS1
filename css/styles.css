@@ -40,6 +40,52 @@ body {
   margin: auto;
 }
 
+/* Basket */
+.basket-container {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px 10px 100px;
+}
+
+.basket-container :hover {
+  text-decoration: underline;
+}
+
+#basketToggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.basket-dropdown {
+  position: absolute;
+  left: 5em; /* this moves the dropdown to the left side */
+  background-color: white;
+  min-width: 360px;
+  border: 1px solid #000000;
+  z-index: 1000;
+  padding: 15px;
+}
+
+.basket-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.basket-dropdown li {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+/*  */
+
 header {
   position: relative;
   background: lightgrey;
