@@ -68,7 +68,9 @@ function displayCartItems() {
     total += item.price;
   });
 
-  document.querySelector(".total-text").textContent = `Total $${total}`;
+  document.querySelector(".total-text").textContent = `Total $${total.toFixed(
+    2
+  )}`;
 
   // Hide loading message after rendering is done
   loadingIndicator.classList.add("hidden");
