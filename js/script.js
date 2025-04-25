@@ -18,7 +18,7 @@ async function fetchAndCreateProducts() {
   } catch (err) {
     console.error("Error fetching products:", err);
     container.innerHTML =
-      "<p class='error-message'>Ops! Failed to load products. Please refresh the page or try again later.</p>";
+      "<p class='error-message'>Oops! Failed to load products. Please refresh the page or try again later.</p>";
   } finally {
     loadingIndicator.classList.add("hidden"); // Hide loading
   }
@@ -110,7 +110,7 @@ function updateBasketDisplay() {
   // Attach event listeners to remove buttons
   document.querySelectorAll(".remove-button").forEach((button) => {
     button.addEventListener("click", (e) => {
-      const indexToRemove = parseInt(e.target.getAttribute("date-index"));
+      const indexToRemove = parseInt(e.target.getAttribute("data-index"));
       removeFromCart(indexToRemove);
     });
   });

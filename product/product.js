@@ -50,7 +50,7 @@ async function fetchAndCreateProducts() {
   } catch (error) {
     console.error("Failed to fetch product", error);
     container.textContent =
-      "Ops! Failed to load product, Please refresh the page or try again later.";
+      "Oops! Failed to load product, Please refresh the page or try again later.";
   } finally {
     loadingIndicator.classList.add("hidden"); // hide loading
   }

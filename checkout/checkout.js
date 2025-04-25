@@ -1,5 +1,5 @@
 // the file checkout.js connects to folder/file, checkout/index.html
-// <!-- js code, add and remove product to and from checkout -->
+// js code, add and remove product to and from checkout
 
 const cartItemsContainer = document.getElementById("cart-items");
 const loadingIndicator = document.getElementById("loadingIndicator");
