@@ -71,6 +71,7 @@ header {
 .gender-filter {
   margin: auto;
   display: flex;
+  padding: 10px 20px;
 }
 
 /* nav & mobile screen */

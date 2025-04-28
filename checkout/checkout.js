@@ -1,5 +1,6 @@
-// the file checkout.js connects to folder/file, checkout/index.html
-// js code, add and remove product to and from checkout
+// checkout.js is styled in product.css
+// checkout.js connects to folder/file, checkout/index.html
+// Add and remove product in cart and in checkout page.
 
 const cartItemsContainer = document.getElementById("cart-items");
 const loadingIndicator = document.getElementById("loadingIndicator");
@@ -34,18 +35,19 @@ function displayCartItems() {
   }
 
   cart.forEach((item) => {
-    const card = document.createElement("div");
+    const box = document.createElement("div");
     const image = document.createElement("img");
     const content = document.createElement("div");
     const title = document.createElement("h2");
     const price = document.createElement("p");
     const removeBtn = document.createElement("button");
 
-    card.className = "card";
-    image.className = "card-image";
-    content.className = "card-content";
-    title.className = "card-title";
-    price.className = "removeBtn";
+    box.className = "box";
+    image.className = "jacket-image";
+    content.className = "jacket-content";
+    title.className = "jacket-title";
+    price.className = "jacket-price";
+    removeBtn.className = "removeBtn";
 
     image.src = item.image.url;
     image.alt = item.image.alt;
@@ -61,9 +63,9 @@ function displayCartItems() {
     content.appendChild(price);
     content.appendChild(removeBtn);
 
-    card.appendChild(image);
-    card.appendChild(content);
-    cartItemsContainer.appendChild(card);
+    box.appendChild(image);
+    box.appendChild(content);
+    cartItemsContainer.appendChild(box);
 
     total += item.price;
   });

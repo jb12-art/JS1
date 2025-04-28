@@ -1,4 +1,5 @@
 // JS1 - API Endpoint Rainy Days.
+// script.js is styled in product.css
 
 const API_URL = "https://v2.api.noroff.dev/rainy-days";
 const container = document.querySelector("#container");
@@ -9,7 +10,7 @@ let allProducts = []; // Store all products globally
 
 async function fetchAndCreateProducts() {
   try {
-    loadingIndicator.classList.remove("hidden"); // show Loading products..., when API products is loading.
+    loadingIndicator.classList.remove("hidden"); // show (Loading products...) message if API products is loading.
     const response = await fetch(API_URL);
     const data = await response.json();
     allProducts = data.data; // Store fetched products
@@ -28,18 +29,18 @@ function displayProducts(products) {
   container.innerHTML = ""; // Clear previous products
 
   products.forEach((product) => {
-    const card = document.createElement("div");
+    const box = document.createElement("div");
     const image = document.createElement("img");
     const content = document.createElement("div");
     const title = document.createElement("h2");
     const price = document.createElement("p");
     const addToCartBtn = document.createElement("button"); // add product to checkout
 
-    card.className = "card";
-    image.className = "card-image";
-    content.className = "card-content";
-    title.className = "card-title";
-    price.className = "card-price";
+    box.className = "box";
+    image.className = "jacket-image";
+    content.className = "jacket-content";
+    title.className = "jacket-title";
+    price.className = "jacket-price";
     addToCartBtn.className = "add-to-cart-button"; // add product to checkout
 
     image.src = product.image.url;
@@ -63,10 +64,10 @@ function displayProducts(products) {
     content.appendChild(title);
     content.appendChild(price);
     content.appendChild(addToCartBtn); // add product to checkout
-    card.appendChild(image);
-    card.appendChild(content);
+    box.appendChild(image);
+    box.appendChild(content);
 
-    container.appendChild(card);
+    container.appendChild(box);
   });
 }
 
