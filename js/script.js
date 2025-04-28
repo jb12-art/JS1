@@ -97,7 +97,7 @@ function updateBasketDisplay() {
   basketList.innerHTML = "";
 
   if (cart.length === 0) {
-    basketList.innerHTML = "<li>Your basket is empty.</li>";
+    basketList.innerHTML = "<li>Your cart is empty.</li>";
     return;
   }
 
