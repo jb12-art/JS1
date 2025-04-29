@@ -101,6 +101,7 @@ function updateBasketDisplay() {
     return;
   }
 
+  // Cart items and Remove-button with class"" to style in, styles.css
   cart.forEach((item, index) => {
     const li = document.createElement("li");
     li.classList.add("basket-item");

@@ -83,10 +83,6 @@ header {
     padding: 10px 20px;
   }
 
-  .basket-container :hover {
-    text-decoration: underline;
-  }
-
   #basketToggle {
     background-color: transparent;
     border: none;
@@ -113,8 +109,8 @@ header {
   }
 
   .basket-dropdown li {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: 14px;
   }
 
   .hidden {
@@ -165,10 +161,6 @@ header {
     padding: 10px 20px 10px 100px;
   }
 
-  .basket-container :hover {
-    text-decoration: underline;
-  }
-
   #basketToggle {
     background-color: transparent;
     border: none;
@@ -180,7 +172,7 @@ header {
     position: absolute;
     left: 5em; /* this moves the dropdown to the left side */
     background-color: white;
-    min-width: 360px;
+    min-width: 380px;
     border: 1px solid #000000;
     z-index: 1000;
     padding: 15px;
@@ -195,8 +187,17 @@ header {
   }
 
   .basket-dropdown li {
+    font-size: 1rem;
+    margin-bottom: 14px;
+  }
+
+  .remove-button {
     font-size: 0.9rem;
-    margin-bottom: 10px;
+  }
+
+  .remove-button:hover {
+    text-decoration: underline;
+    border-color: lightcoral;
   }
 
   .hidden {

@@ -65,7 +65,7 @@
 
   .jacket-price {
     font-size: 1.1rem;
-    color: #2ecc71;
+    color: black;
     font-weight: bold;
   }
 }
@@ -134,7 +134,7 @@
 
   .jacket-price {
     font-size: 16px;
-    color: #24af5e;
+    color: black;
     font-weight: bold;
   }
 }
