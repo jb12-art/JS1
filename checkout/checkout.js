@@ -42,12 +42,13 @@ function displayCartItems() {
     const price = document.createElement("p");
     const removeBtn = document.createElement("button");
 
+    // style is in product.css
     box.className = "box";
     image.className = "jacket-image";
     content.className = "jacket-content";
     title.className = "jacket-title";
     price.className = "jacket-price";
-    removeBtn.className = "removeBtn";
+    removeBtn.className = "removeBtn"; // style is in checkout.css
 
     image.src = item.image.url;
     image.alt = item.image.alt;

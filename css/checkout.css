@@ -79,6 +79,15 @@
 
 /* Desktop screen */
 @media (min-width: 821px) {
+  .removeBtn {
+    font-size: 0.9rem;
+  }
+
+  .removeBtn:hover {
+    text-decoration: underline;
+    border-color: lightcoral;
+  }
+
   .checkout-buy-now-button {
     margin: auto;
     margin-top: 40px;

@@ -76,7 +76,7 @@ header {
 
 /* nav & mobile screen */
 @media (max-width: 820px) {
-  /* Basket */
+  /* Cart/ basket */
   .basket-container {
     position: relative;
     display: inline-block;
@@ -116,7 +116,7 @@ header {
   .hidden {
     display: none;
   }
-  /*  */
+  /* End of cart/ basket */
 
   nav,
   #menu-checkbox {
@@ -154,7 +154,7 @@ header {
 
 /*nav & desktop screen*/
 @media (min-width: 821px) {
-  /* Basket */
+  /* Cart/ Basket */
   .basket-container {
     position: relative;
     display: inline-block;
@@ -203,7 +203,7 @@ header {
   .hidden {
     display: none;
   }
-  /*  */
+  /* End of cart/ basket */
 
   nav,
   #menu-checkbox {
