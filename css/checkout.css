@@ -86,6 +86,7 @@
   .removeBtn:hover {
     text-decoration: underline;
     border-color: lightcoral;
+    border-radius: 4px;
   }
 
   .checkout-buy-now-button {

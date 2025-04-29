@@ -198,12 +198,18 @@ header {
   .remove-button:hover {
     text-decoration: underline;
     border-color: lightcoral;
+    border-radius: 4px;
   }
 
   .hidden {
     display: none;
   }
   /* End of cart/ basket */
+
+  .add-to-cart-button:hover {
+    border-color: lightgreen;
+    border-radius: 4px;
+  }
 
   nav,
   #menu-checkbox {
