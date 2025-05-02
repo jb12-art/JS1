@@ -4,12 +4,12 @@
 /* Mobile screen */
 @media (max-width: 820px) {
   /* User is alerted on the page if something goes wrong like an API call. */
+  /* code is in file script.js */
   .error-message {
+    grid-column: 1 / -1; /* spans all columns/ full width in the grid */
+    text-align: center;
     color: black;
     font-size: 1.2rem;
-    text-align: center;
-    text-decoration: underline;
-    margin-top: 2rem;
   }
 
   /* In Home & product details page. Loading text is shown when waiting for products to load. */
@@ -73,22 +73,22 @@
 /* desktop screen */
 @media (min-width: 821px) {
   /* User is alerted on the page if something goes wrong like an API call. */
+  /* code is in file script.js */
   .error-message {
+    grid-column: 1 / -1; /* spans all columns/ full width in the grid */
+    text-align: center;
     color: black;
     font-size: 1.2rem;
-    text-align: center;
-    text-decoration: underline;
-    margin-top: 2rem;
   }
 
-  /* In Home & product details page. Loading text is shown when waiting for products to load. */
+  /* In Home: index.html & product details page product/index.html. Loading text is shown when waiting for products to load. */
   .loading {
     text-align: center;
     font-size: 1.2rem;
     margin: 20px;
   }
 
-  /* In Home & product details page. Loading text is shown when waiting for products to load. */
+  /* In Home: index.html & product details page: product/index.html. Loading text is shown when waiting for products to load. */
   .hidden {
     display: none;
   }

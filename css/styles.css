@@ -118,6 +118,10 @@ header {
   }
   /* End of cart/ basket */
 
+  .add-to-cart-button {
+    padding: 6px 16px;
+  }
+
   nav,
   #menu-checkbox {
     display: none;
@@ -205,6 +209,10 @@ header {
     display: none;
   }
   /* End of cart/ basket */
+
+  .add-to-cart-button {
+    padding: 6px 16px;
+  }
 
   .add-to-cart-button:hover {
     border-color: lightgreen;

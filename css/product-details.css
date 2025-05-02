@@ -38,7 +38,7 @@
 /* Price styling */
 .product-price {
   font-size: 1.5rem;
-  color: #28a745;
+  color: black;
   margin: 10px 0;
 }
 
@@ -52,14 +52,9 @@
 /* Back to products link */
 .back-button {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 8px 18px;
+  background-color: #1182fa;
   color: white;
   text-decoration: none;
   border-radius: 6px;
-  transition: background-color 0.3s;
-}
-
-.back-button:hover {
-  background-color: #0056b3;
 }

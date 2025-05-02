@@ -28,7 +28,7 @@
   text-align: center;
   font-size: 1.2rem;
   margin-top: 30px;
-  grid-column: 1 / -1; /* Make sure it spans all columns in the grid */
+  grid-column: 1 / -1; /* spans all columns/ full width in the grid */
 }
 
 .order-overview-text {

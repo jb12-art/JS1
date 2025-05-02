@@ -10,16 +10,16 @@ let allProducts = []; // Store all products globally
 
 async function fetchAndCreateProducts() {
   try {
-    loadingIndicator.classList.remove("hidden"); // show (Loading products...) message if API products is loading.
+    loadingIndicator.classList.remove("hidden"); // show 'Loading products...' message if API products is loading.
     const response = await fetch(API_URL);
     const data = await response.json();
     allProducts = data.data; // Store fetched products
 
-    displayProducts(allProducts); // Display all products initially
+    displayProducts(allProducts); // Display all products first
   } catch (err) {
     console.error("Error fetching products:", err);
     container.innerHTML =
-      "<p class='error-message'>Oops! Failed to load products. Please refresh the page or try again later.</p>";
+      "<p class='error-message'>Oops! Failed to load products. Please refresh the page or try again later.</p>"; // styles in, product.css
   } finally {
     loadingIndicator.classList.add("hidden"); // Hide loading
   }
@@ -34,14 +34,14 @@ function displayProducts(products) {
     const content = document.createElement("div");
     const title = document.createElement("h2");
     const price = document.createElement("p");
-    const addToCartBtn = document.createElement("button"); // add product to checkout
+    const addToCartBtn = document.createElement("button"); // add product to cart and checkout
 
     box.className = "box";
     image.className = "jacket-image";
     content.className = "jacket-content";
     title.className = "jacket-title";
     price.className = "jacket-price";
-    addToCartBtn.className = "add-to-cart-button"; // add product to checkout
+    addToCartBtn.className = "add-to-cart-button"; // add product to cart and checkout
 
     image.src = product.image.url;
     image.alt = product.image.alt;
@@ -53,9 +53,9 @@ function displayProducts(products) {
     title.appendChild(titleLink);
 
     price.textContent = `$${product.price}`;
-    addToCartBtn.textContent = "Add to Cart"; // add product to checkout
+    addToCartBtn.textContent = "Add to Cart"; // add product to cart and checkout
 
-    // add product to checkout
+    // add product to cart and checkout
     // Add to cart handler
     addToCartBtn.addEventListener("click", () => {
       addToCart(product);
@@ -63,7 +63,7 @@ function displayProducts(products) {
 
     content.appendChild(title);
     content.appendChild(price);
-    content.appendChild(addToCartBtn); // add product to checkout
+    content.appendChild(addToCartBtn); // add product to cart and checkout, styles in: styles.css
     box.appendChild(image);
     box.appendChild(content);
 

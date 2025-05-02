@@ -48,6 +48,7 @@ async function fetchAndCreateProducts() {
     productDiv.appendChild(description);
     productDiv.appendChild(backButton);
 
+    // error message if API call don't work.
     container.appendChild(productDiv);
   } catch (error) {
     console.error("Failed to fetch product", error);
