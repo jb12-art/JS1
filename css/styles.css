@@ -11,7 +11,7 @@
 body {
   margin: 0 auto;
   min-height: 100vh;
-  background-color: rgb(223, 230, 238);
+  background-color: rgb(238, 223, 223);
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
@@ -42,7 +42,7 @@ body {
 
 header {
   position: relative;
-  background: lightgrey;
+  background: #ade698;
 }
 
 .page-main {
@@ -256,7 +256,7 @@ footer {
   margin: auto;
   width: 100%;
   text-align: center;
-  background-color: lightgrey;
+  background-color: #ade698;
   padding-top: 10px;
   padding-bottom: 10px;
 }
