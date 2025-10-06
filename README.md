@@ -4,9 +4,9 @@ This is the third coding project and it's about learning HTML, CSS & JavaScript.
 
 ## Description
 
-RainyDays v.2. is to make the first RainyDays project that is hard coded, to get code being retrieved from an external source or generated dynamically, with JavaScript.
+JS1 (RainyDays v.2.) is to make the first RainyDays project that is hard coded, to get code being retrieved from an external source or generated dynamically, with JavaScript.
 
-- RainyDays v.2 is now working as an e-commerce.
+- JS1 (RainyDays v.2) is now working as an e-commerce.
 - Click on a product to see product details.
 - Add products to cart.
 - Remove products from cart.
